@@ -39,7 +39,7 @@
           <a class="disconnect-button" href="#">Disconnect</a>
         </div>
         <div class="status">
-          <span>Estado: </span>
+          <span>Status: </span>
           <span class="status-sensor">Disconnected</span>
         </div>
       </div>
@@ -51,12 +51,17 @@
           </div>
           <div class="sensor-name">
               <h4>Luxometer</h4>
-              <p>0 lux</p>
+              <p id="lux-value">0 lux</p>
+              <div class="lux-status">
+                <span>Status: </span>
+                <span class="status-sensor-lux">Disconnected</span>
+              </div>
           </div>
         </div>
       </div>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
+    <script src="libs/jquery/jquery.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>
